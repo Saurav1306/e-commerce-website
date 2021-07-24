@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Haryana Handloom, best furnishing store in new delhi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <!--JAVASCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  <!--FAVICONS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <!--NAVIGATION BAR-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a href="file:///C:/Users/lenevo/Desktop/web%20development/HTML-HH%20SITE/hhs.html" class="navbar-brand">HaryanaHandloom</a>
+          <button class="navbar-toggler" type="button" style="background:grey;" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="float:right;">
+              <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/lenevo/Desktop/web%20development/HTML-HH%20SITE/cart.html" style="color:black;">Cart</a>
+
+              </li>
+              <li class="nav-item">
+                <a href="#products" class="nav-link" style="color:black;">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="file:///C:/Users/lenevo/Desktop/web%20development/HTML-HH%20SITE/about.html" class="nav-link" style="color:black;">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#connect" class="nav-link" style="color:black;">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" onclick="document.getElementById('m2131').style.display='block'" style="width:auto; color:black;" class="nav-link">Login</a>
+                <div class="modal" id="m2131">
+                  <form class="modal-content animate" action="hhs.html" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('m2131').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" name="uname" placeholder="Enter Username" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" name="psw" placeholder="Enter Password" required>
+                      <div class="container" align="center">
+                        <button type="submit" class="sbtn">Login</button>
+                        <button type="button" onclick="document.getElementById('m2131').style.display='none'" class="cancelbtn">Cancel</button>
+                      </div>
+                      <label>
+                        <input type="checkbox" name="remember" checked="checked">Remember me
+                      </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                      <span class="psw"><a href="#" onclick="document.getElementById('m1222').style.display='block'" style="width:auto; color:black;">Forgot password?</a></span>
+                      <div class="modal" id="m1222" align="center">
+                        <div class="modal-content animate" action="hhs.html" method="post">
+                          <div class="imgcontainer">
+                            <span onclick="document.getElementById('m1222').style.display='none'" class="close" title="Close Modal">&times;</span>
+                          </div>
+                          <div class="container">
+                            <input type="tel" name="tel" placeholder="Enter your Mob. Number">
+                          <!--PHP TO GET OTP FOR FORGOT PASSWORD-->
+                            <button type="button" name="otpbtn" class="btn btn-success btn-lg" onclick=" '<?php
+                            function password($a)
+                            {
+                              $values = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz';
+                              return substr(str_shuffle($values), 0, $a);
+                            }
+                              echo password(4)."\n";
+                            ?>">
+                            Get OTP</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--CAROUSEL OF UPCOMING SCHEMES/ LATEST PRODUCTS,ETC-->
+    <section>
+      <div class="">
+        <div id="c3211" class="carousel-slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="hnd.png" alt="mattress sale upto 20%" class="d-block img-fluid" style="height:500px; width:100%;">
+            </div>
+            <div class="carousel-item">
+              <img src="5.png" alt="mattress sale upto 20%" class="d-block img-fluid" style="height:500px; width:100%;">
+            </div>
+            <div class="carousel-item">
+              <img src="lsr.jpg" alt="bedsheet sale 50%" class="d-block img-fluid" style="height:500px; width:100%;">
+            </div>
+            <div class="carousel-item">
+              <img src="ID.jpg" alt="luxury" class="d-block img-fluid" style="height:500px; width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <br>
+
+<!--PRODUCTS-->
+  <section>
+    <h2 align="center" style="font-family:serif;">OUR RANGE</h2>
+    <div class="container-fluid" align="center" id="products">
+  <!--Mattresses-->
+      <h2 align="center">Mattresses</h2>
+      <div class="row row-cols-1 row-cols-md-4" style="display:block;">
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="kksig.png" alt="Signature" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Signature</h3>
+              <p style="font-size:18pt;"><b>INR 123499/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1230').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1230" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1230').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                    <div class="col">
+                      <img src="kksig.png" alt="Signature" style="w-100; margin-top:75px;" class="img-fluid">
+                    </div>
+                    <div class="col">
+                      <p align="center" style="font-size:24pt;">Signature</p>
+                      <p style="font-size:18pt;" align="center">The best luxury mattress money can buy!<br>Signature is an ultra soft mattress with BoxTop construction with multiple layers of high density pocket springs. It is constructed using micro pocket springs in the comfort layer for body contouring and another layer of highly dense pocket spring in the base layer for the support function and the same is surrounded by a hard foam encasement for edge protection. </p>
+                      <div class="row">
+                        <div class="col">
+                          <p style="font-size:16pt;"><em>Warranty 12years</em></p>
+                        </div>
+                        <div class="col">
+                          <p style="font-size:18pt;"><b> INR 123499/-</b></p>
+                        </div>
+                      </div>
+                      <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="kk3d.png" alt="3D Memory" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">3D Memory</h3>
+              <p style="font-size:18pt;"><b>INR 65999/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1232').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1232" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1232').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="kk3d.png" alt="3d Memory" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">3D Memory</p>
+                        <p align="center" style="font-size:18pt;">A Comfortable Memory Foam & Innerspring Mattress.<br>The best comfortable memory foam and pocket spring mattress with the only purpose of enhancing the quality of sleep. This is a medium soft hybrid mattress i.e. is made with multiple layers compromising a memory foam, BodySink soft PU Foam and the core layer made up of Pocket Spring. A world class sleeping mattress to incorporate the latest technology called FLANGER TOP which takes the majority of the bodyweight and transfers essential weight to the pocketed spring core. <br><em>This mattress is best suited for people looking for a medium soft hybrid mattress.</em></p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty- 10years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 65999/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col" style="display:inline-grid;">
+            <div class="card h-100">
+              <img src="kk5000.png" alt="Chiropedic 5000" class="img-fluid">
+              <div class="card-text">
+                <h3 align="center">Chiropedic 5000</h3>
+                <p style="font-size:18pt;"><b>INR 45399/-</b></p>
+              </div>
+              <div class="container" style="display:block;">
+                <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+                <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1233').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+                <div class="modal" id="m1233" align="center">
+                  <div class="modal-content animate" action="hhs.html" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('m1233').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="kk5000.png" alt="Chiropedic" style="w-100; margin-top:75px;" class="img-fluid">
+                        </div>
+                        <div class="col">
+                          <p align="center" style="font-size:24pt;">Chiropedic 5000</p>
+                          <p align="center" style="font-size:18pt;">A Comfortable Memory Foam & Innerspring Mattress.<br>The best comfortable memory foam and pocket spring mattress with the only purpose of enhancing the quality of sleep. This is a medium soft hybrid mattress i.e. is made with multiple layers compromising a memory foam, BodySink soft PU Foam and the core layer made up of Pocket Spring. A world class sleeping mattress to incorporate the latest technology called FLANGER TOP which takes the majority of the bodyweight and transfers essential weight to the pocketed spring core. <br><em>This mattress is best suited for people looking for a medium soft hybrid mattress.</em></p>
+                          <div class="row">
+                            <div class="col">
+                              <p style="font-size:16pt;"><em>Warranty- 7years</em></p>
+                            </div>
+                            <div class="col">
+                              <p style="font-size:18pt;"><b>INR- 45399/-</b></p>
+                            </div>
+                          </div>
+                          <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="kkeuro.png" alt="EuroSoft" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">EuroSoft</h3>
+              <p style="font-size:18pt;"><b>INR 42399/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1234').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1234" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1234').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="kkeuro.png" alt="EuroSoft" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">EuroSoft</p>
+                        <p align="center" style="font-size:18pt;">Medium Soft Foam & Innerspring Mattress!<br>PostureSense EuroSoft is a premium foam and innerspring mattress that comes with a Euro Top construction. This is a medium soft pocket spring mattress that has a higher spring count to isolate the motion i.e. do-not-disturb feature. This mattress is specially designed for people who are on a tighter budget but want to enjoy the premium-ness of a medium soft euro top mattress.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty- 10years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 42399/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="kkpsss.png" alt="SureSleep" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">SureSleep</h3>
+              <p style="font-size:18pt;"><b>INR 38199/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1235').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1235" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1235').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="kkpsss.png" alt="EuroSoft" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">SureSleep</p>
+                        <p style="font-size:18pt;" align="center">Both side spring usable mattress!<br>One side of PostureSense SureSleep mattress is soft and the other side is firm. The mattress comes with a higher count of pocket springs to isolate the motion transfer. The softer side of this spring mattress uses ultra plush soft foam and the other side which is firm uses pure hard foam. r those who wants both the worlds a hint of medium firm and a softer mattress when they want. Just Flip the mattress and experience the quality sleep night after night.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty 10years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b> INR 38199/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="kkerbk.png" alt="EuroBack" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">EuroBack</h3>
+              <p style="font-size:18pt;"><b>INR 27499/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1236').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1236" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1236').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="kkerbk.png" alt="EuroSoft" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">EuroBack</p>
+                        <p align="center" style="font-size:18pt;">Doctor recommended ortho mattress!<br>DrMattress EuroBack is the Best Affordable Ortho Mattress recommended by doctors and physio around the world. It is an orthopedic firm that has a Euro top construction with High GSM Quilted Fabric to enhance comfort. Its comfort layer is made from 100% Pure Sleep Grade PU (Polyutherene) Foam and its core layer is designed from high density bonded foam that supports your back throughout the night.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty- 7years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 27499/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="spnair.png" alt="SpineTechAir" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">SpineTech Air Luxury</h3>
+              <p style="font-size:18pt;"><b>INR 25000/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1237').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1237" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1237').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="spnair.png" alt="EuroSoft" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">SpineTech AIR Luxury</p>
+                        <p align="center" style="font-size:18pt;">Spinetech AIR Luxury is the Best Affordable Mattress recommended around the world. It comes with a twin support layer that has a high resilience layer for comfort along with rebonded layer for support and Impression memory foam in Top Quilting to enhance comfort. Its comfort layer is made from 100% Pure Sleep Memory Foam and its core layer is designed from high density bonded foam that supports your back throughout the night. It comes with latest technology which keeps you healthy along with its engineered side walls.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty- 5years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 25000/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="spntch.png" alt="SpineTech" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">SpineTech</h3>
+              <p style="font-size:18pt;"><b>INR 17500/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1238').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1238" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1238').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="spntch.png" alt="EuroSoft" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">SpineTech</p>
+                        <p align="center" style="font-size:18pt;">Spinetech is the Best Affordable Mattress recommended around the world. It comes with a triple support layer that has a high resilience layer for comfort along with rebonded foam for support and AeroFirm Layer for Support and Impression memory foam in Top Quilting to enhance comfort. Its comfort layer is made from 100% Pure Sleep Memory Foam and its core layer is designed from high density bonded foam and Airmesh Fabric for Breathability that supports your back throughout the night. It comes with latest technology which keeps you healthy along with its engineered side walls.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty- 5years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 17500/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="spnpls.png" alt="Kohinoor" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Kohinoor</h3>
+              <p style="font-size:18pt;"><b>INR 20500/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1239').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1239" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1239').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="spnpls.png" alt="EuroSoft" style="w-100; margin-top:75px;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">Kohinoor</p>
+                        <p align="center" style="font-size:18pt;">Kohinoor is the Best Affordable Orthopedic Mattress recommended around the world. It comes with a triple support layer that has a high resilience layer for comfort along with rebonded foam for support and AeroFirm Layer for Support and Impression memory foam in Top Quilting to enhance comfort. Its comfort layer is made from 100% Towel Jaquard Fabric and its core layer is designed from high density bonded foam that supports your back throughout the night. It comes with latest technology which keeps you healthy along with its engineered side walls.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:16pt;"><em>Warranty- 5years</em></p>
+                          </div>
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 20500/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<hr>
+      <!--Bedsheets-->
+      <h2 align="center">Bedsheets</h2>
+      <div class="row row-cols-1 row-cols-md-4" style="display:block;">
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="bdst1.jpg" alt="B/S" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">SunShine</h3>
+              <p style="font-size:18pt;"><b>INR 1399/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1240').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1240" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1240').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="bdst1.jpg" alt="Bedsheet1" style="w-100;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">SunShine</p>
+                        <p align="center" style="font-size:18pt;">SunShine is a bedsheet which is made with 100% cotton without any mixing. It comes with contrast pillow covers and is a 120 thread count bedsheet. It is highly suitable and comfortable during summers and is a very good product at a very reasonable range.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 1399/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="bdst2.jpg" alt="B/S" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Elegance</h3>
+              <p style="font-size:18pt;"><b>INR 1799/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1241').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1241" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1241').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="bdst2.jpg" alt="Bedsheet1" style="width:50%;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">Elegance</p>
+                        <p align="center" style="font-size:18pt;">Elegance is a bedsheet which is made with 100% cotton without any mixing. It comes with contrast pillow covers and is a 120 thread count bedsheet. It is highly suitable and comfortable during summers and is a very good product at a very reasonable range.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 1799/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="bdst3.jpg" alt="B/S" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Sentosa</h3>
+              <p style="font-size:18pt;"><b>INR 1899/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1242').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1242" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1242').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="bdst3.jpg" alt="Bedsheet1" style="width:50%;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">Sentosa</p>
+                        <p align="center" style="font-size:18pt;">Sentosa is a bedsheet which is made with 100% cotton without any mixing. It comes with contrast pillow covers and is a 120 thread count bedsheet. It is highly suitable and comfortable during summers and is a very good product at a very reasonable range.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 1899/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="bdst4.jpg" alt="B/S" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Lotus</h3>
+              <p style="font-size:18pt;"><b>INR 2799/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1243').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1243" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1243').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="bdst4.jpg" alt="Bedsheet1" style="w-100;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">Lotus</p>
+                        <p align="center" style="font-size:18pt;">Lotus is a bedsheet which is made with 100% cotton without any mixing. It comes with contrast pillow covers and is a 120 thread count bedsheet. It is highly suitable and comfortable during summers and is a very good product at a very reasonable range.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 2799/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="bdst5.jpg" alt="B/S" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Elegance</h3>
+              <p style="font-size:18pt;"><b>INR 1799/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1244').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1244" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1244').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="bdst5.jpg" alt="Bedsheet1" style="width:50%;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">Elegance</p>
+                        <p align="center" style="font-size:18pt;">Elegance is a bedsheet which is made with 100% cotton without any mixing. It comes with contrast pillow covers and is a 120 thread count bedsheet. It is highly suitable and comfortable during summers and is a very good product at a very reasonable range.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 1799/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display:inline-grid; margin-bottom:15px;">
+          <div class="card h-100">
+            <img src="JKL.jpg" alt="B/S" class="img-fluid">
+            <div class="card-text">
+              <h3 align="center">Classic Special</h3>
+              <p style="font-size:18pt;"><b>INR 1199/-</b></p>
+            </div>
+            <div class="container" style="display:block;">
+              <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+              <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1245').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+              <div class="modal" id="m1245" align="center">
+                <div class="modal-content animate" action="hhs.html" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('m1245').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img src="JKL.jpg" alt="Bedsheet1" style="w-100;" class="img-fluid">
+                      </div>
+                      <div class="col">
+                        <p align="center" style="font-size:24pt;">Classic Special</p>
+                        <p align="center" style="font-size:18pt;">Classic Special is a bedsheet which is made with 100% cotton without any mixing. It comes with contrast pillow covers and is a 120 thread count bedsheet. It is highly suitable and comfortable during summers and is a very good product at a very reasonable range.</p>
+                        <div class="row">
+                          <div class="col">
+                            <p style="font-size:18pt;"><b>INR- 1199/-</b></p>
+                          </div>
+                        </div>
+                        <button type="button" name="buybtn" class="btn btn-success btn-lg">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<hr>
+    <!--Blinds-->
+  <h2 style="align:center;">Blinds</h2>
+  <div class="row row-cols-1 row-cols-md-4" style="display:block;">
+    <div class="col" style="display:inline-grid; margin-bottom:15px;">
+      <div class="card h-100">
+        <img src="rblnd.png" alt="Roller-blinds" class="img-fluid">
+        <div class="card-text">
+          <h3 align="center">Roller Blind</h3>
+          <p style="font-size:18pt;"><b>INR 210/sqft</b></p>
+        </div>
+        <div class="container" style="display:block;">
+          <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+          <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1250').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+          <div class="modal" id="m1250" align="center">
+            <div class="modal-content animate" action="hhs.html" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('m1250').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <div class="container">
+                <img src="rblnd.png" alt="Blind1" style="w-100;" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="display:inline-grid; margin-bottom:15px;">
+      <div class="card h-100">
+        <img src="vblnd.png" alt="Vertical-blinds" class="img-fluid">
+        <div class="card-text">
+          <h3 align="center">Vertical Blind</h3>
+          <p style="font-size:18pt;"><b>INR 240/sqft</b></p>
+        </div>
+        <div class="container" style="display:block;">
+          <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+          <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1251').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+          <div class="modal" id="m1251" align="center">
+            <div class="modal-content animate" action="hhs.html" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('m1251').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <div class="container">
+                <img src="vblnd.png" alt="Blind1" style="w-100;" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="display:inline-grid; margin-bottom:15px;">
+      <div class="card h-100">
+        <img src="rmnblnd.png" alt="Roman-blinds" class="img-fluid">
+        <div class="card-text">
+          <h3 align="center">Roman Blind</h3>
+          <p style="font-size:18pt;"><b>INR 200/sqft</b></p>
+        </div>
+        <div class="container" style="display:block;">
+          <button class="btn btn-success" type="button" name="mbtn" style="width:auto; display:inline-grid;">Add to Cart</button>
+          <button type="button" class="btn btn-primary" name="mbtn" onclick="document.getElementById('m1252').style.display='block'" style="width:auto; display:inline-grid;">More Details</button>
+          <div class="modal" id="m1252" align="center">
+            <div class="modal-content animate" action="hhs.html" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('m1252').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <div class="container">
+                <img src="rmnblnd.png" alt="Blind1" style="w-100;" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+    </div>
+  </section>
+
+  <br>
+
+<!--CONTACT US-->
+  <div class="contact-us" align="center">
+    <h3 align="center">CONTACT</h3>
+    <!--Map directing to office-->
+    <a href="https://www.google.com/maps/place/Haryana+Handloom/data=!3m1!4b1!4m2!3m1!1s0x390ce263b36b76a3:0x25721450a82aced5" target="_blank" itemprop="hasMap" data-tracking-element-type="7">
+      <div class="QMbmRe"
+        style="background-image:url('https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=en&amp;region=IN&amp;markers=color:0x5f9bce|28.5737834,77.209883&amp;zoom=16&amp;client=google-presto&amp;signature=GRl9SzH-tFHreTGo9xr6lXXFLrs')"
+        title="Map showing business location.">
+      </div>
+    </a>
+    <!--Contact info-->
+    <div class="fghh" align="center" id="connect">
+      <div class="row" style="display:block; align:center;">
+        <div class="column" style="display:inline">
+          <div class="contact" style="display:inline-grid;  padding-left:20px;">
+            <p>CONTACT</p>
+            <a href="tel: +91-9818772242" itemprop="telephone"> <button type="btn" name="telbtn" class="btn btn-success">Call Now</button> </a> <br>
+            <p style="position:relative; bottom:15px;">9818772242 <br>
+              8368174085</p>
+          </div>
+        </div>
+    <!--Address-->
+        <div class="column" style="display:inline;">
+          <div class="address" style="display:inline-grid; padding:70px;">
+            <p>ADDRESS</p>
+            <a href="https://www.google.com/maps/dir//Haryana+Handloom/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce263b36b76a3:0x25721450a82aced5!2m2!1d77.20988299999999!2d28.5737834"> <button type="btn" name="btn" class="btn btn-success">Get
+                Directions</button></a> <br>
+            <p style="position:relative; bottom:15px;">183,<br>
+              Mohan Singh Market,<br>
+              INA,<br>110023</p>
+          </div>
+        </div>
+    <!--Business Hours-->
+        <div class="column" style="display:inline;">
+          <div class="bhrs" style="display:inline-grid;">
+            <p>Business Hours</p>
+            <div class="hrs">
+              <table itemprop="openingHours" class="bnhr">
+                <tbody>
+                  <tr>
+                    <th class="day">Mon:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                  <tr>
+                    <th class="day">Tue:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                  <tr>
+                    <th class="day">Wed:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                  <tr>
+                    <th class="day">Thu:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                  <tr>
+                    <th class="day">Fri:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                  <tr>
+                    <th class="day">Sat:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                  <tr>
+                    <th class="day">Sun:</th>
+                    <td class="gggg"><span class="time">10:00 AM – 8:40 PM</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<!--Connect with us-->
+    <div class="container-fluid" style="background:#ccc;">
+      <br>
+      <p align="center" style=" font:18pt serif;">CONNECT WITH US</p>
+      <div class="row row-cols-1 row-cols-md-4" style="display:block; float:left; align-items:center;">
+        <!--Quick Links-->
+      <div class="col" style="display:inline-grid;" align="center">
+        <h4 align="center">Explore</h4>
+          <a href="file:///C:/Users/lenevo/Desktop/web%20development/HTML-HH%20SITE/hhs.html" style="color:black;">Home</a>
+          <a href="#products" style="color:black;">Products</a>
+          <a href="file:///C:/Users/lenevo/Desktop/web%20development/HTML-HH%20SITE/about.html" style="color:black;">About</a>
+          <a href="#connect" style="color:black;">Contact</a>
+      </div>
+      <!--Privacy Policy-->
+      <div class="col" style="display:inline-grid; margin-left:25px;">
+        <div class="container" align="center">
+        <h4 align="center">Privacy</h4>
+        <div class="container-fluid">
+        <a href="#" style="color:black;">Terms & Conditions</a> <br>
+        <a href="#" style="color:black;">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+    </div>
+    <!--Social Media handles-->
+    <div class="container" style="display:inline;">
+      <h4 align="center">Follow us on</h4>
+      <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/haryanahandloomstudio/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.facebook.com/Haryana-Handloom-Studio-Munirka-115353103544004"><i class="fa fa-facebook"></i></a>
+      <a href="mailto:haryanahandloomdelhi@gmail.com" class="fa fa-envelope"></a><br>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<!--H.H rights reserved-->
+      <div class="container">
+      <h3 align="center" style="font-family:serif;">Thank You For Contacting <em>Haryana Handloom</em>.</h3> <br>
+      <p align="center">2021 HARYANA HANDLOOM, All Rights Reserved.</p>
+    </div>
+  </div>
+  <!--Designed By-->
+    Designed By <a href="https://www.instagram.com/saurav.1306/">SAURAV ARORA</a>
+
+<!--Javascript-->
+    <script>
+  /*Sticky NavBar*/
+    // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+    /*Modal*/
+      // Get the modal
+      var modal = document.getElementById('m2131');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+</body>
+</html>
